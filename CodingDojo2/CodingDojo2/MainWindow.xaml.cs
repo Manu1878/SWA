@@ -23,6 +23,7 @@ namespace CodingDojo2
         public MainWindow()
         {
             InitializeComponent();
+            CurrTime.Content = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
         }
     }
 }

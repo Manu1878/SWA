@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CodingDojo2"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid ShowGridLines="True">
+    <Grid ShowGridLines="True" Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="100"/>
@@ -17,7 +17,13 @@
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="90*"/>
             </Grid.RowDefinitions>
-            <Label Content="Überlauf Grauwasser" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Emoji" Background="White" Foreground="#FFE42626"/>
+            <Border BorderBrush="Red" BorderThickness="2" Margin="3">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Image Source="images/Warning-WF.png" Width="25"></Image>
+                    <Label Grid.Row="0" Content="Überlauf Grauwasser" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Emoji" Background="Black" Foreground="White"/>
+                </StackPanel>
+            </Border>
+            <Label Grid.Row="1" Content="...tbd..." VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></Label>
         </Grid>
 
         <Grid Grid.Column="1" ShowGridLines="True">
@@ -34,8 +40,14 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content="0"></Label>
-                <Label  Grid.Row="1" Content="0"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="images/Cloud sun02-WF.png" Width="20"></Image>
+                    <Label Grid.Row="0" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Grid.Row="1" Source="images/wind.png" Width="20"></Image>
+                    <Label  Grid.Row="1" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
             </Grid>
 
             <Grid Grid.Row="1">
@@ -44,9 +56,18 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content="0"></Label>
-                <Label Grid.Row="1" Content="0"></Label>
-                <Label Grid.Row="2" Content="0"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="images/Solar.png" Width="20"></Image>
+                    <Label Grid.Row="0" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Grid.Row="1" Source="images/Man-01.png" Width="20"></Image>
+                    <Label Grid.Row="1" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Grid.Row="2" Source="images/Lock-WF.png" Width="20"></Image>
+                    <Label Grid.Row="2" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
             </Grid>
 
             <Grid Grid.Row="2">
@@ -54,8 +75,14 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content="0"></Label>
-                <Label Grid.Row="1" Content="0"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="images/Message Mail-WF.png" Width="20"></Image>
+                    <Label Grid.Row="0" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Grid.Row="1" Source="images/Tasks.png" Width="20"></Image>
+                    <Label Grid.Row="1" Content="0" Foreground="White" VerticalAlignment="Center"></Label>
+                </StackPanel>
             </Grid>
 
             <Grid Grid.Row="3">
@@ -67,12 +94,12 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Content="Übersicht" Margin="2"></Button>
-                <Button Grid.Row="1" Content="Räume" Margin="2"></Button>
-                <Button Grid.Row="2" Content="Geräte" Margin="2"></Button>
-                <Button Grid.Row="3" Content="Gebäude" Margin="2"></Button>
-                <Button Grid.Row="4" Content="Sicherheit" Margin="2"></Button>
-                <Button Grid.Row="5" Content="Multimedia" Margin="2"></Button>
+                <Button Grid.Row="0" Content="Übersicht" Margin="2" Background="Black" Foreground="White"></Button>
+                <Button Grid.Row="1" Content="Räume" Margin="2" Background="Black" Foreground="White"></Button>
+                <Button Grid.Row="2" Content="Geräte" Margin="2" Background="Black" Foreground="White"></Button>
+                <Button Grid.Row="3" Content="Gebäude" Margin="2" Background="Black" Foreground="White"></Button>
+                <Button Grid.Row="4" Content="Sicherheit" Margin="2" Background="Black" Foreground="White"></Button>
+                <Button Grid.Row="5" Content="Multimedia" Margin="2" Background="Black" Foreground="White"></Button>
             </Grid>
 
             <Grid Grid.Row="4">
@@ -88,21 +115,21 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0">
-                        <Label Content="0"></Label>
+                        <Image Source="images/Bell New-WF.png" Width="15"></Image>
                     </Grid>
                     <Grid Grid.Column="1">
-                        <Label Content="0"></Label>
+                        <Image Source="images/Speaker Decrease - 01.png" Width="15"></Image>
                     </Grid>
                     <Grid Grid.Column="2">
-                        <Label Content="0"></Label>
+                        <Label Content="0" Foreground="White" VerticalAlignment="Center"></Label>
                     </Grid>
                     <Grid Grid.Column="3">
-                        <Label Content="0"></Label>
+                        <Image Source="images/Speaker Increase - 02.png" Width="15"></Image>
                     </Grid>
                           
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Label Content="0"></Label>
+                    <Label Name="CurrTime" Content="0" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center"></Label>
                 </Grid>
 
             </Grid>
