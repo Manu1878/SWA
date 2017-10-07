@@ -6,7 +6,108 @@
         xmlns:local="clr-namespace:CodingDojo2"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Überlauf Grauwasser" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Emoji" Background="White" Foreground="#FFE42626"/>
+        </Grid>
+
+        <Grid Grid.Column="1" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="0"></Label>
+                <Label  Grid.Row="1" Content="0"></Label>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="0"></Label>
+                <Label Grid.Row="1" Content="0"></Label>
+                <Label Grid.Row="2" Content="0"></Label>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="0"></Label>
+                <Label Grid.Row="1" Content="0"></Label>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Content="Übersicht" Margin="2"></Button>
+                <Button Grid.Row="1" Content="Räume" Margin="2"></Button>
+                <Button Grid.Row="2" Content="Geräte" Margin="2"></Button>
+                <Button Grid.Row="3" Content="Gebäude" Margin="2"></Button>
+                <Button Grid.Row="4" Content="Sicherheit" Margin="2"></Button>
+                <Button Grid.Row="5" Content="Multimedia" Margin="2"></Button>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Content="0"></Label>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Label Content="0"></Label>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label Content="0"></Label>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Label Content="0"></Label>
+                    </Grid>
+                          
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Label Content="0"></Label>
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+
     </Grid>
 </Window>
