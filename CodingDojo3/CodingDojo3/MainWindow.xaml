@@ -14,16 +14,37 @@
 
         <Grid Grid.Column="0" ShowGridLines="True">
             <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="90*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="85*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="85*"/>
+                <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
-            <Border BorderBrush="Red" BorderThickness="2" Margin="3">
+            <Border BorderBrush="Red" BorderThickness="2" Margin="3,3,2.667,3">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                     <Image Source="images/Warning-WF.png" Width="25"></Image>
                     <Label Grid.Row="0" Content="Überlauf Grauwasser" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Emoji" Background="Black" Foreground="White"/>
                 </StackPanel>
             </Border>
-            <Label Grid.Row="1" Content="...tbd..." VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></Label>
+            <!--<Label Grid.Row="1" Content="...tbd..." VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"></Label>-->
+            <Label Grid.Row="1" Content="Aktoren" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"></Label>
+            <DataGrid Grid.Row="2">
+                
+            </DataGrid>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Hinzufügen" Background="Black" Foreground="White" Margin="5"></Button>
+                <Button Content="Löschen" Background="Black" Foreground="White" Margin="5"></Button>
+            </StackPanel>
+            <Label Grid.Row="4" Content="Sensoren" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"></Label>
+            <DataGrid Grid.Row="5">
+
+            </DataGrid>
+            <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Hinzufügen" Background="Black" Foreground="White" Margin="5"></Button>
+                <Button Content="Löschen" Background="Black" Foreground="White" Margin="5"></Button>
+            </StackPanel>
         </Grid>
 
         <Grid Grid.Column="1" ShowGridLines="True">
