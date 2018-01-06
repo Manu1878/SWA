@@ -65,6 +65,7 @@ namespace CodingDojo3.ViewModel
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 40);
+            timer.Tick += UpdateTime;
             if (!IsInDesignMode)
             {
                 LoadData();
